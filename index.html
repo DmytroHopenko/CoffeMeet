@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="./js/animation.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>CoffeMeet</title>
   </head>
   <body>
+    
     <header>
       <div class="direct_line">
         <div class="language">
@@ -179,8 +183,14 @@
         <p>Privacy policy</p>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
-    <script src="./js/animation.js" defer></script>
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+    <script>
+      const loader = document.getElementById("loader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>

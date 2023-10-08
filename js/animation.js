@@ -2,6 +2,9 @@ const timeLine = gsap.timeline({ defaults: { duration: 0.7 } });
 const timeLine2 = gsap.timeline({ defaults: { duration: 1 } });
 
 timeLine
+  .to("header", { opacity: 1, visibility: "visible", duration: 0})
+  .to("main", { opacity: 1, visibility: "visible", duration: 0 })
+  .to("footer", { opacity: 1, visibility: "visible", duration: 0 })
   .from(".direct_line", { y: -120 })
   .from(".direct_line .language p", {
     opacity: 0,

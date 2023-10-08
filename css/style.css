@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600;900&family=Nunito:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3.h4,
+h5,
+h6,
+p {
+  color: #fff;
+}
+body {
+  scroll-behavior: smooth;
+  background: #020204;
+  font-family: "Jost", sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+header {
+  height: 120px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+header .direct_line {
+  height: 30px;
+  width: 100%;
+  padding: 0 18.75%; /* 360px/1920 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .direct_line .language {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+header .direct_line .language p {
+  color: #fff;
+  font-family: "Jost";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+header .direct_line .language p:hover {
+  color: #c7a17a;
+}
+header .direct_line .language p.active {
+  color: #c7a17a;
+}
+header .direct_line > p {
+  color: #fff;
+  font-family: "Jost";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+header .navigation {
+  height: 90px;
+  width: 100%;
+  padding: 0 18.75%; /* 360px/1920 */
+  border-top: 1px solid #32323d;
+  border-bottom: 1px solid #32323d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .navigation nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+header .navigation nav ul li a {
+  color: #fff;
+  font-family: "Jost";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  transition: color 0.5s ease;
+}
+header .navigation nav ul li a.active {
+  color: #c7a17a;
+}
+header .navigation nav ul li a:hover {
+  color: #c7a17a;
+}
+header .navigation .logo_wrap {
+  margin: 0 auto 0 18.360656%; /* 224px/1220 */
+}
+header .navigation .icons_wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+header .navigation .icons_wrap a:last-child {
+  position: relative;
+}
+header .navigation .icons_wrap a:last-child:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #c7a17a;
+}
+main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+main .hero_wrap{
+    width: 100%;
+    background: url('../img/hero.jpg') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(2, 2, 4, 0.55);
+    padding: 199px 18.75% 198px 18.75%; /* 360px/1920 */
+}
+main .hero_wrap .hero_information{
+    display: flex;
+    flex-direction: column;
+}
+main .hero_wrap .hero_information h1{
+    width: 571px;
+    color: #FFF;
+    font-family: 'Jost';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 144%; /* 86.4px */
+    text-transform: uppercase;
+}
+main .hero_wrap .hero_information p{
+    color: #DFDFDF;
+    font-family: 'Jost';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 535px;
+    margin: 35px 0;
+}
+main .hero_wrap .hero_information .button_wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+main .hero_wrap .hero_information .button_wrap a{
+    color: #FFF;
+    font-family: 'Jost';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 16px 51px;
+    border-radius: 10px;
+    border: 1px solid #32323d;
+    transition: background 0.5s ease;
+}
+main .hero_wrap .hero_information .button_wrap a:hover{
+    background: #32323d;
+}
+main .hero_wrap .hero_information .button_wrap a.active{
+    background: #c7a17a;
+    padding: 17px 60px 11px 60px;
+    border: 0;
+}
+main .hero_wrap .hero_information .button_wrap a.active:hover{
+    background: #bb9672;
+}
+main .content{
+    width: 100%;
+    height: 100%;
+    padding: 100px 18.75% 80px 18.75%; /* 360px/1920 */
+}
+main .content .intro{
+    display: flex;
+    flex-direction: row;
+    height: 330px;
+    width: 100%;
+    background: #14141D;
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+main .content .intro .intro_img{
+    flex: 1;
+    background: url('../img/image2.png') no-repeat center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+main .content .intro .intro_information{
+    flex: 1;
+    padding: 30px 0 42px 29px;    
+}
+main .content .intro .intro_information h3{
+    color: #FFF;
+    font-family: 'Jost';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+main .content .intro .intro_information p{
+    color: #DFDFDF;
+    font-family: 'Jost';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 498px;
+}
+main .content .catalog_wrap{
+  margin-bottom: 80px;
+}
+main .content .catalog_wrap h1{
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 144%; /* 57.6px */
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+main .content .catalog_wrap .catalog{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 372px);
+  gap: 21px;
+}
+main .content .catalog_wrap .catalog .element{
+  border-radius: 10px;
+  background: #14141D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: background 0.5s ease;
+}
+main .content .catalog_wrap .catalog .element:hover{
+  background: #22222F;
+}
+main .content .catalog_wrap .catalog .element h3{
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  margin: 42px 0 30px 0;
+}
+main .content .catalog_wrap .catalog .element .price_wrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+main .content .catalog_wrap .catalog .element .price_wrap p{
+  margin-right: 29px;
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+main .content .catalog_wrap .catalog .element .price_wrap span{
+  color: #818181;
+  font-family: 'Jost';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+main .content .catalog_wrap .catalog .element .price_wrap img{
+  margin-left: auto;  
+}
+main .content .news_wrap h1{
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 144%; /* 57.6px */
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+main .content .news_wrap .news{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 465px;
+  gap: 21px;
+}
+main .content .news_wrap .news .element{
+  border-radius: 10px;
+  background: #14141D; 
+}
+main .content .news_wrap .news .element:first-child .img_wrap{
+  height: 239px;
+  width: 100%;
+  background: url('../img/product3.png') no-repeat center;
+  background-size: cover;
+}
+main .content .news_wrap .news .element:nth-child(2) .img_wrap{
+  height: 239px;
+  width: 100%;
+  background: url('../img/product4.png') no-repeat center;
+  background-size: cover;
+}
+main .content .news_wrap .news .element:last-child .img_wrap{
+  height: 239px;
+  width: 100%;
+  background: url('../img/product5.png') no-repeat center;
+  background-size: cover;
+}
+main .content .news_wrap .news .element .element_information{
+  padding: 20px 21px;
+}
+main .content .news_wrap .news .element .element_information h3{
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+main .content .news_wrap .news .element .element_information p{
+  color: #DFDFDF;
+  font-family: 'Jost';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer{
+  padding: 80px 18.75%; /* 360px/1920 */
+  position: relative;
+  border-top: 1px solid #14141D;
+  display: flex;
+  flex-direction: row;
+}
+footer .logo_wrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 18.416667%; /* 221px/1200 */
+}
+footer .logo_wrap h5{
+  color: #F8DABF;
+  font-family: 'Jost';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+footer .menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .menu ul li a{
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  transition: color 0.5s ease;
+}
+footer .menu ul li a:hover{
+  color: #c7a17a;
+}
+footer .official{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  height: 100%;
+  margin-left: 25.5%; /* 306px/1200 */
+}
+footer .official p{
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1200px){
+    header .direct_line {
+        padding: 0 6.25%; /* 120px/1920 */
+      }
+    header .navigation {
+        padding: 0 6.25%; /* 120px/1920 */
+    }
+    header .navigation .logo_wrap{
+        margin: 0 auto;
+    }
+    main .hero_wrap{
+      padding: 199px 6.25% 198px 6.25%; /* 120px/1200px */
+    }
+    main .content{
+      padding: 100px 6.25% 80px 6.25%; /* 120px/1920 */
+  }
+  footer{
+    padding: 80px 6.25%; /* 120px/1920 */
+  }
+}
